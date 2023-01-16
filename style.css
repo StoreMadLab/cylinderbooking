@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@media (max-width: 998px) {
+  html {
+    font-size: 80%;
+    background-image: 100%;
+    height: 50vh;
+    min-width: 3.5em;
+
+    /* <percentage> value */
+    min-width: 50%;
+
+    /* Keyword values */
+    min-width: max-content;
+    min-width: min-content;
+    min-width: fit-content(2rem);
+  }
+}
+
+@media (min-width: 500px) {
+  image {
+    width: 1.6em;
+    height: 1.2rem;
+    padding-top: 2rem;
+  }
+  .logo{
+    width:50%;
+    height:100%;
+  }
+
+  .lo {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .shoping a {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    color: rgb(255, 38, 0);
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+li,a,button {
+  font-family: "Montserral", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+ color: rebeccapurple;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+body {
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+
+
+/*----------HEADER--------------*/
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 12vh;
+}
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  width: 12.5em;
+  margin-left: 0.8em;
+}
+nav {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+nav .mainMenu li a:hover {
+  color: rgba(253, 134, 15, 0.822);
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/*--------------MAIN----------*/
+.main {
+  font-family: "Montserral", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  background-image: url("https://en.gaonconnection.com/wp-content/uploads/2022/02/gram-panchayat.jpg");
+  background-repeat: repeat-x;
+  text-align: center;
+  padding: 9rem 9.5rem 6.25rem 8.25rem;
+  margin-top: 0px;
+  background-position: center;
+  width: 100%;
+  max-height: 100vh;
+
+}
+button {
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 57, 61, 0.733);
+  border: none;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  display: inline;
+}
+button:hover {
+  background-color: #26c1fa;
+  color: #333333;
+}
+
+
+
+
+
+
+/*--------FOOTER----------*/
+.footer {
+  background-color: #ffffff;
+  padding: 1.5rem 0;
+  height: 12vh;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.footer-col {
+  width: 100%;
+  padding: 0 0.9rem;
+  height: 100%;
+  margin-top: 10px;
+  color: rebeccapurple;
+  
+}
+.footer-col h4 {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  margin-bottom: 1.9rem;
+  font-weight: 500;
+  position: relative;
+  line-height: 0.4;
+  text-align: center;
+  color: rebeccapurple;
+
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 50;
+  bottom: -0.65rem;
+  background-color: #e91e63;
+  height: 0.12rem;
+  box-sizing: border-box;
+  width: 3rem;
+}
+.social-links{
+  text-align: center;
+}
+
+
+/*--product css--*/
+.products {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.proucts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+}
+.products-container .box {
+  padding: 20px;
+
+  border-radius: 0.5rem;
+  position: relative;
+  float: left;
+  width: 30vh;
+  
+}
+.products-container .box:hover {
+  box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+}
+
+.products-container .box img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+}
+.products-container .box span {
+  font-weight: 500;
+  font-size: 13px;
+}
+.products-container .box h2 {
+  font-size: 1.2rem;
+  font-weight: 600rem;
+}
+.nav-link {
+  list-style: none;
+}
+.nav-link li {
+  display: inline-block;
+  padding: 0rem 1.2rem;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-link a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+.testimonials{
+  padding-top: 2.5rem;
+}
+.testimonials h3{
+  padding-top: 1.2rem;
+
+}
+.bg-success{
+  background-color: #5fb288;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+.bg-danger{
+  background-color: #e90c0c;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+.text-center {
+  text-align: center;
+}
+
+h2, .h2 {
+  font-size: 30px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 400;
+  color: #333333;
+}
+@media (min-width: 992px){
+.col-md-6{
+    width: 50%;
+}
+}
+@media (min-width: 992px){
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+.shoping a
+{
+  color: white;
+}
+.shoping a:hover{
+  color: black;
+}
+
+@media (min-width: 640px){}
+.sm\:p-6 {
+    padding: 1.5rem;
+    /* display: flex; */
+    line-height: 2rem;
+}
+@media (min-width: 768px){}
+.md\:col-span-1 {
+    /* grid-column: span 1/span 1; */
+    text-align: center;
+}
+@media (min-width: 640px){
+.sm\:rounded-md {
+    border-radius: 0.375rem;
+    width: 50vw;
+    padding-left: 2rem;
+    margin-left: 10rem;
+}
+}
+@media (min-width: 768px){
+.md\:grid-cols-3 {
+    grid-template-columns: none;
+}
+}
+.container form .eror-msg{
+ margin:10px 0;
+ display: block;
+ background: crimson;
+ color:#fff;
+ border-radius:5px;
+ font-size: 20px;
+}
+.eror-msg{
+  color: #e90c0c;
+}
